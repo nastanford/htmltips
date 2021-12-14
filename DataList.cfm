@@ -1,33 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tip on DataList</title>
-  <style>
-    body {
-      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      font-size: 14px;
-      line-height: 1.42857143;
-      color: #333;
-      background-color: #fff;
-    }
+<cfset request.pageTitle = "Data List">
+<cfinclude template = "includes/header.cfm"> 
 
-    input[type="text"] {
-      margin: 50px;
-      padding: 10px;
-      border-radius: 10px;
-      outline:none !important;
-      border-width:1px;
-      box-shadow: 0 0 10px gray;
-    }
-  </style>
-</head>
-<body>
-  <h1>Tip on DataList</h1>
-  <hr>
-  <h4>DataList</h4>
+<style>
+  body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+    background-color: #fff;
+  }
+
+  input[type="text"] {
+    margin: 50px;
+    padding: 10px;
+    border-radius: 10px;
+    outline:none !important;
+    border-width:1px;
+    box-shadow: 0 0 10px gray;
+  }
+</style>
+
   <input type="text" list="dataList" size="50px" placeholder="Search">
   <datalist id="dataList">
     <option value="Apple">Detail: Keeps the doctor away.</option>
@@ -56,6 +48,6 @@
     <option value="Pomegranate"></option>
     <option value="Avocado"></option>
     <option value="Kiwi"></option>
-    </datalist>
-</body>
-</html>
+  </datalist>
+
+<cfinclude template = "includes/footer.cfm">

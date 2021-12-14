@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tip on Details Summary</title>
+<cfset request.pageTitle = "Details Summary">
+<cfinclude template = "includes/header.cfm"> 
   <style>
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -21,7 +16,7 @@
   </style>
 </head>
 <body>
-  <h1>Details Summary</h1>
+
   <details>
   <summary>More Info</summary>
   <p>
@@ -32,5 +27,4 @@
   </p>
 </details>
   
-</body>
-</html>
+<cfinclude template = "includes/footer.cfm">

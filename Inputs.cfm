@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tip on Inputs</title>
+<cfset request.pageTitle = "inputs">
+<cfinclude template = "includes/header.cfm"> 
   <style>
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -25,10 +20,6 @@
     }
 
   </style>
-</head>
-<body>
-  <h1>Tip on Inputs</h1>
-  <hr>
 
   <h4>Date</h4>
   <input type="date"> 
@@ -52,5 +43,4 @@
   <h4>Color</h4>
   <input type="color"><br>    
 
-</body>
-</html>
+<cfinclude template = "includes/footer.cfm">
